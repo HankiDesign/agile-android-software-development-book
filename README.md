@@ -22,7 +22,7 @@ The book is also available online from the official website at: [https://agiledr
 
 # Errata
 
-If you find anything wrong with the Ebooks, please [open an issue](https://github.com/Agile-Android-Software-Development/agile-android-software-development-book/blob/issues/new) and one of the maintainers will take a look.
+If you find anything wrong with the Ebooks, please [open an issue](https://github.com/Agile-Android-Software-Development/agile-android-software-development-book/issues/new) and one of the maintainers will take a look.
 
 If you noticed an error in the text and you are familiar with git and the markdown syntax,  please submit a pull request (see CONTRIBUTING.md) instead of opening an issue.
 
