@@ -3,4 +3,5 @@ build/**
 
 # Ignore text editor backup files
 *.*~
+*.*.backup
 
