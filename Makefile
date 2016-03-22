@@ -1,6 +1,5 @@
 BUILD = build
 BOOKNAME = agile-android-software-development
-DEMO_BOOKNAME = $(BOOKNAME)_sample
 
 # Set language for build
 ifndef L10N
@@ -48,16 +47,16 @@ $(BUILD)/$(L10N)/mobi/$(BOOKNAME).mobi:
 
 $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo: $(CHAPTERS)
 	mkdir -p $(BUILD)/$(L10N)/texinfo
-	pandoc $(TOC) -s -S -c styles.css --self-contained --to=texinfo -o $@ $^
+	pandoc $(TOC) -s -S -c css/buttondown.css --to=texinfo -o $@ $^
 
-$(BUILD)/$(L10N)/html/$(BOOKNAME).html:
+$(BUILD)/$(L10N)/html/$(BOOKNAME).html: $(CHAPTERS)
 	mkdir -p $(BUILD)/$(L10N)/html
 	cp -pR images figs $(BUILD)/$(L10N)/html
-	texi2html --split=chapter --output=$(BUILD)/$(L10N)/html $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo
+	texi2any --html --split=section --css-include=css/buttondown.css --output=$(BUILD)/$(L10N)/html/ $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo
 
 $(BUILD)/$(L10N)/pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS)
 	mkdir -p $(BUILD)/$(L10N)/pdf
-	pandoc $(TOC) --latex-engine=xelatex --highlight-style kate --variable mainfont="DroidSans" --variable monofont="DroidSansMono" -V documentclass=$(LATEX_CLASS) -o $@ $^
+	pandoc $(TOC) --latex-engine=xelatex --highlight-style=kate --variable mainfont="DroidSans" --variable monofont="DroidSansMono" -V documentclass=$(LATEX_CLASS) -o $@ $^
 	pdftk A=$(BUILD)/$(L10N)/pdf/$(BOOKNAME).pdf cat A2-end output $(BUILD)/$(L10N)/pdf/temp.pdf
 	convert $(COVER_IMAGE) $(BUILD)/$(L10N)/pdf/cover.pdf
 	pdftk $(BUILD)/$(L10N)/pdf/cover.pdf $(BUILD)/$(L10N)/pdf/temp.pdf cat output $(BUILD)/$(L10N)/pdf/$(BOOKNAME).pdf
