@@ -47,6 +47,15 @@ To build locally your translation, you should change the default value of the *L
 	ifndef L10N
 		L10N=fr
 	endif
+	
+	
+## Suggested Text Editor
+
+The choice of a text editor (or IDE) by a software developer is very subjective, and is based on personal preferences. For this book, I used [GhostWriter](https://github.com/wereturtle/ghostwriter) as my text editor of choice. It is simple enough, lightweight, have nice markdown text highlighting, support basic spell checking, and it stays out of my way while I'm writing.
+
+I have tried SublimeText, obscure IntelliJ IDEAS plugins, GEdit, VIM, and more but *GhostWriter* is the only markdown-oriented text editor I found that meet my needs.
+
+Your mileage may vary, but you should give it a try!
 
 
       
