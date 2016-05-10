@@ -8,7 +8,7 @@ endif
 
 TITLE = $(L10N)/title.txt
 METADATA = $(L10N)/metadata.xml
-CHAPTERS = $(L10N)/disclaimer.md $(L10N)/acknowledgments.md $(L10N)/preface.md \
+CHAPTERS = $(L10N)/disclaimer.md $(L10N)/version.md $(L10N)/acknowledgments.md $(L10N)/preface.md \
 $(L10N)/part1.md $(L10N)/getting_started_with_docker.md $(L10N)/android_studio_intro.md $(L10N)/git_intro.md $(L10N)/gradle_intro.md $(L10N)/emulator_setup.md $(L10N)/real_device_setup.md $(L10N)/tdd_bdd_mock_setup.md $(L10N)/first_test_app.md $(L10N)/red_green_refactor.md $(L10N)/code_analysis_setup.md \
 $(L10N)/part2.md $(L10N)/do_droplet_setup.md $(L10N)/jenkins_setup.md $(L10N)/jenkins_plugins.md $(L10N)/first_ci_job.md $(L10N)/gitlab_installation.md $(L10N)/jenkins_gitlab_integration.md $(L10N)/ci_job_for_fizzbuzz.md  $(L10N)/tdd_fizzbuzz.md $(L10N)/beta_apk_pubishing.md $(L10N)/sonarqube_setup.md $(L10N)/jenkins_sonarqube_integration.md $(L10N)/sending_emails.md $(L10N)/build_notifications_on_android.md $(L10N)/securing_access_w_ssl.md \
 $(L10N)/part3.md $(L10N)/agile_pm_tools.md $(L10N)/redmine_setup.md $(L10N)/redmine_integration.md $(L10N)/installing_backlog_plugin.md $(L10N)/quick_intro_backlog.md $(L10N)/app_design_on_paper.md $(L10N)/android_bdd.md $(L10N)/code_injection.md $(L10N)/modularization.md $(L10N)/gradle_automation.md \
@@ -21,11 +21,14 @@ COVER_IMAGE = images/cover.jpg
 LATEX_CLASS = book
 
 all: book
-
-book: epub mobi texinfo html pdf
+	
+book: prebuild epub mobi texinfo html pdf
 
 clean:
 	if [ -d "$(BUILD)/$(L10N)" ]; then rm -r $(BUILD)/$(L10N); fi
+
+# Generate version.md file
+prebuild: $(L10N)/version.md	
 	
 epub: $(BUILD)/$(L10N)/epub/$(BOOKNAME).epub
 
@@ -36,6 +39,9 @@ html: $(BUILD)/$(L10N)/html/$(BOOKNAME).html
 texinfo: $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo
 
 pdf: $(BUILD)/$(L10N)/pdf/$(BOOKNAME).pdf
+
+$(L10N)/version.md:
+	./scripts/versionning.sh $(L10N)/version.txt
 
 $(BUILD)/$(L10N)/epub/$(BOOKNAME).epub: $(TITLE) $(CHAPTERS)
 	mkdir -p $(BUILD)/$(L10N)/epub
@@ -65,4 +71,4 @@ $(BUILD)/$(L10N)/pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS)
 	if [ -e "$(BUILD)/$(L10N)/pdf/temp.pdf" ]; then rm -r $(BUILD)/$(L10N)/pdf/temp.pdf; fi	
 	if [ -e "$(BUILD)/$(L10N)/pdf/cover.pdf" ]; then rm -r $(BUILD)/$(L10N)/pdf/cover.pdf; fi
 
-.PHONY: all book clean epub mobi texinfo html pdf
+.PHONY: all prebuild book clean epub mobi texinfo html pdf

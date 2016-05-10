@@ -1,0 +1,6 @@
+# About this release {-}
+
+New version of this book are released regularly. To keep up with the continuous publication process used by this book, this section provides you with specific information about new content, and the build process itself (version number, date and time of the build, and such).
+
+
+
