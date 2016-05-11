@@ -1,3 +1,5 @@
-## Offshore development : how to find great collaborators
+## Offshore development
+
+### How to find great collaborators?
 
 

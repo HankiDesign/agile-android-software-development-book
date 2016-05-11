@@ -1,4 +1,0 @@
-## Getting to know Gradle
-
-
-

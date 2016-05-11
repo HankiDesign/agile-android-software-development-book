@@ -9,12 +9,12 @@ endif
 TITLE = $(L10N)/title.txt
 METADATA = $(L10N)/metadata.xml
 CHAPTERS = $(L10N)/disclaimer.md $(L10N)/version.md $(L10N)/acknowledgments.md $(L10N)/preface.md \
-$(L10N)/part1.md $(L10N)/getting_started_with_docker.md $(L10N)/android_studio_intro.md $(L10N)/git_intro.md $(L10N)/gradle_intro.md $(L10N)/emulator_setup.md $(L10N)/real_device_setup.md $(L10N)/tdd_bdd_mock_setup.md $(L10N)/first_test_app.md $(L10N)/red_green_refactor.md $(L10N)/code_analysis_setup.md \
-$(L10N)/part2.md $(L10N)/do_droplet_setup.md $(L10N)/jenkins_setup.md $(L10N)/jenkins_plugins.md $(L10N)/first_ci_job.md $(L10N)/gitlab_installation.md $(L10N)/jenkins_gitlab_integration.md $(L10N)/ci_job_for_fizzbuzz.md  $(L10N)/tdd_fizzbuzz.md $(L10N)/beta_apk_pubishing.md $(L10N)/sonarqube_setup.md $(L10N)/jenkins_sonarqube_integration.md $(L10N)/sending_emails.md $(L10N)/build_notifications_on_android.md $(L10N)/securing_access_w_ssl.md \
-$(L10N)/part3.md $(L10N)/agile_pm_tools.md $(L10N)/redmine_setup.md $(L10N)/redmine_integration.md $(L10N)/installing_backlog_plugin.md $(L10N)/quick_intro_backlog.md $(L10N)/app_design_on_paper.md $(L10N)/android_bdd.md $(L10N)/code_injection.md $(L10N)/modularization.md $(L10N)/gradle_automation.md \
+$(L10N)/part1.md $(L10N)/android_studio_intro.md $(L10N)/fizz_buzz_intro.md $(L10N)/tdd_fizzbuzz.md $(L10N)/fizz_buzz_iteration_1.md $(L10N)/tdd_bdd_mock_setup.md $(L10N)/code_analysis_setup.md \
+$(L10N)/part2.md $(L10N)/ci_setup.md $(L10N)/first_ci_job.md $(L10N)/beta_apk_publishing.md $(L10N)/sonarqube_setup.md \
+$(L10N)/part3.md $(L10N)/agile_pm_tools.md $(L10N)/app_design_on_paper.md $(L10N)/android_bdd.md $(L10N)/code_injection.md $(L10N)/modularization.md $(L10N)/gradle_automation.md \
 $(L10N)/part4.md $(L10N)/dry_dev_process.md $(L10N)/build_measure_learn.md \
-$(L10N)/part5.md $(L10N)/automation_strategy.md $(L10N)/on_demand_jenkins_slaves.md $(L10N)/automated_deployment.md $(L10N)/large_scale_testing.md $(L10N)/team_collaboration.md $(L10N)/offshore_dev.md $(L10N)/multiple_target_build.md \
-$(L10N)/part6.md $(L10N)/reduce_time_to_market.md $(L10N)/monetization.md $(L10N)/marketing.md $(L10N)/dealing_with_legacy_apps.md \
+$(L10N)/part5.md $(L10N)/automation_strategy.md $(L10N)/on_demand_build_slaves.md $(L10N)/automated_deployment.md $(L10N)/large_scale_testing.md $(L10N)/team_collaboration.md $(L10N)/offshore_dev.md $(L10N)/multiple_target_build.md \
+$(L10N)/part6.md $(L10N)/reduce_time_to_market.md $(L10N)/monetization.md $(L10N)/marketing.md $(L10N)/dealing_with_legacy_apps.md $(L10N)/getting_started_with_docker.md \
 $(L10N)/appendix.md $(L10N)/tech_watch.md $(L10N)/best_tool.md $(L10N)/agile_prog_philo.md
 TOC = --toc --toc-depth=2
 COVER_IMAGE = images/cover.jpg
