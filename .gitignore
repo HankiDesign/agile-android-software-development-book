@@ -6,3 +6,6 @@ build/**
 *.*.backup
 
 .idea/**
+
+# Generated version files
+version.md

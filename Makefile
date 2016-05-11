@@ -26,6 +26,7 @@ book: prebuild epub mobi texinfo html pdf
 
 clean:
 	if [ -d "$(BUILD)/$(L10N)" ]; then rm -r $(BUILD)/$(L10N); fi
+	rm "$(L10N)/version.md"
 
 # Generate version.md file
 prebuild: $(L10N)/version.md	
