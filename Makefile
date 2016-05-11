@@ -34,7 +34,7 @@ epub: $(BUILD)/$(L10N)/epub/$(BOOKNAME).epub
 
 mobi: $(BUILD)/$(L10N)/mobi/$(BOOKNAME).mobi	
 
-html: $(BUILD)/$(L10N)/html/$(BOOKNAME).html
+html: texinfo $(BUILD)/$(L10N)/html/$(BOOKNAME).html
 
 texinfo: $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo
 
@@ -53,13 +53,12 @@ $(BUILD)/$(L10N)/mobi/$(BOOKNAME).mobi:
 
 $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo: $(TITLE) $(CHAPTERS)
 	mkdir -p $(BUILD)/$(L10N)/texinfo
-	pandoc $(TOC) -s -S --to=texinfo --highlight-style=zenburn -B $(L10N)/header.html -o $@ $^
+	pandoc $(TOC) -s -S --to=texinfo --highlight-style=zenburn -o $@ $^
 
-$(BUILD)/$(L10N)/html/$(BOOKNAME).html: $(CHAPTERS)
+$(BUILD)/$(L10N)/html/$(BOOKNAME).html:
 	mkdir -p $(BUILD)/$(L10N)/html
 	cp -pR images figs $(BUILD)/$(L10N)/html
-	#pandoc $(TOC) -s -S --self-contained -c css/buttondown.css --highlight-style=zenburn -B $(L10N)/header.html -A $(L10N)/footer.html --variable mainfont="DroidSans" --variable monofont="DroidSansMono" --to=html -o $@ $^
-	texi2any --html --css-include=css/buttondown.css --split=section -c TOP_NODE_UP_URL=https://agiledroid.com --output=$(BUILD)/$(L10N)/html/ $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo
+	texi2any --html --css-include=css/buttondown.css --split=section -c TOP_NODE_UP_URL="https://agiledroid.com" --output=$(BUILD)/$(L10N)/html/ $(BUILD)/$(L10N)/texinfo/$(BOOKNAME).texinfo
 
 $(BUILD)/$(L10N)/pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS)
 	mkdir -p $(BUILD)/$(L10N)/pdf
