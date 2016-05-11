@@ -1,4 +1,4 @@
-## Multiple target using the same source code
+## One app, multiple targets
 
 
 

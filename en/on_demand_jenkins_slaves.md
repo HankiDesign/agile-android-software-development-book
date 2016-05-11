@@ -1,3 +1,0 @@
-## On-demand Jenkins slaves
-
-
