@@ -8,16 +8,12 @@ The book is also available online from the official website at: [https://agiledr
 # Building the Ebooks
 
 * Clone the repository
-* Install the latest version of [PanDoc](http://pandoc.org/installing.html). On Ubuntu :
-		sudo apt-get install pandoc
-* Then, install 3rd party tools:		
-		sudo apt-get install texlive texlive-xetex lmodern texlive-latex-extra fonts-droid texi2html pdftk
-* To build the Ebook in all formats:
-		make all
-* If you want to produce only one format, you could specify it on the command line (supported: epub, mobi, texinfo, html, and pdf) :
-		make pdf
-* To clean up all the files produced by pandoc:
-		make clean
+* Install the latest version of [AsciiDoctor](http://asciidoctor.org/). On Ubuntu :
+		sudo apt-get install asciidoctor
+* Get the dependencies needed:
+        	bundle install	
+* To generate the Ebook in all formats:
+		bundle exec rake book:build
 
 
 # Errata

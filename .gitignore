@@ -9,3 +9,8 @@ build/**
 
 # Generated version files
 version.md
+*.epub
+*.html
+*.mobi
+*.pdf
+*.pdfmarks

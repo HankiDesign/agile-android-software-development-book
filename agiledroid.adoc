@@ -1,0 +1,29 @@
+Agile Android Software Development
+==================================
+:doctype:   book
+:docinfo:
+:toc:
+:toclevels: 2
+:front-cover-image: image:book/cover.jpg[width=1050,height=1600]
+
+include::book/disclaimer.adoc[]
+
+include::book/version.adoc[]
+
+include::book/acknowledgments.adoc[]
+
+include::book/preface.adoc[]
+
+include::book/01-agile-android-toolbox/1-agile-android-toolbox.adoc[]
+
+include::book/02-automation-101/1-automation-101.adoc[]
+
+include::book/03-agile-software-project-management/1-agile-software-project-management.adoc[]
+
+include::book/04-lean-android/1-lean-android.adoc[]
+
+include::book/05-scaling/1-scaling.adoc[]
+
+include::book/06-advanced-topics/1-advanced-topics.adoc[]
+
+include::book/A-about-technological-watch-and-agility/1-about-technological-watch-and-agility.adoc[]
