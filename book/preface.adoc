@@ -1,4 +1,4 @@
-# Preface {-}
+= Preface
 
 Android can be a lot of things depending on your point of view.
 
@@ -13,7 +13,7 @@ For us as developers, Android is a way to express our creativity (outside of our
 By the end of this book, you should be a more productive and, therefore, happier Android software developer.  You would be surprised what a happy developer can accomplish!
 
 
-## About this book
+== About this book
 
 When I started learning Android programming, I sometimes found myself confronted by a daunting task and wondering, "Is there a more agile way to do this or that?" I've been searching for answers in Android programming books expecting to find something about the tools I use daily in my job but used in the context of mobile application development. Yet I have found nothing.
 
@@ -27,13 +27,13 @@ Because of the number of topics covered in this book, I will not throw a bunch o
 We evolve this app from a wireframe concept on paper to a fully functioning app that we release to Google Play.  All of the concepts demonstrated in this book are usable for other apps you develop. At the end of each chapter, there are some hints to guide you on how to use the concepts to your own benefit.
 
 
-## Who should read this book
+== Who should read this book
 
 This book is targeted at experienced software developers who are familiar with at least one Object Oriented Programming (OOP) language, such as C++, C#, or Java.  You should also have some basic understanding of source code control (preferably *Git*), shell scripting and Linux (if you know how to open a command shell, you will do great). 
 
 The techniques and tools shared in this book are presented mostly in the context of a *team of one*---that is, one indie developer who wants to take his Android development workflow to the next level.  The concepts presented in this book can also apply to larger teams, but this is not our main audience.
 
-To get the most from this book, you should already have read one or more entry-level books about Android programming (see the following [Recommanded References](#recommanded-references) section), and you should already have released one or more Android apps to Google Play.
+To get the most from this book, you should already have read one or more entry-level books about Android programming (see the following [Recommended References](#recommended-references) section), and you should already have released one or more Android apps to Google Play.
 
 This book does not cover Android basics, but it does its best to address all those questions you may end up with after we present advanced topics. In the case where some intermediate to advanced knowledge is required to fully understand a topic, you are provided with references to look up.
 
@@ -41,7 +41,7 @@ Additionally, if you have some experience with Agile software projects, this wil
 
 Finally, if you are an experienced developer working full-time for your boss's software company---and dreaming of doing your *own things*---you will find food for thought in this book. Likewise, if you're looking to improve your Android programming workflow, learn new tools and techniques, develop more agile apps---and even make some money with Android---this book is definitely for you!
 
-## Philosophy and guidelines
+== Philosophy and guidelines
 
 Big disclaimer: This book is, at times, very opinionated. *Mea culpae*, the core of this book comes from my years on the *IT battlefield*, and I've learned the hard way what works and what doesn't.
 
@@ -62,7 +62,7 @@ All designs, processes, examples, concepts, and such presented in this book had 
 All of this was taken into account for the sake of helping you reduce the time-to-market for your apps and let you focus on developing great ones.
 
 
-## How this book is organized
+== How this book is organized
 
 This book is organized in six parts:
 
@@ -75,26 +75,26 @@ This book is organized in six parts:
 
 In Part 1, we set up and present the tools I propose to fill your Agile Android developer toolbox. By the end of Part 1, you will have set up a development environment that will help you build our example application. In Part 2, building upon what we've learned in the previous chapters, I teach you how to optimize your development process by automating tedious or repetitive tasks, so we can concentrate on tasks with added value in building our final app. Then, in Part 3, we look at software management using Agile tools and methodology. We also talk about subjects like *behavior-driven development* (BDD) and TDD to help us document our code and designs. In Part 4, we locate and eliminate sources of waste. We follow some theories provided by the *Lean Startup* movement and learn how to implement an effective feedback loop (*Build-Measure-Learn* loop) for Android software projects. In Part 5, I show you how to use *cloud computing* to your advantage and scale your builds and tests to multiple environments. Finally, in Part 6, I talk about more advanced topics, such as marketing for your apps, publishing, and monetization tips and techniques.
 
-In the appendix, I present less technical subjects that are usefull but not at the core of Agile Android software development. I present the techniques I use to monitor the evolution of the market, so I am alerted when new trends or opportunities surface. I also present how to select tools among equivalent alternatives. 
+In the appendix, I present less technical subjects that are useful but not at the core of Agile Android software development. I present the techniques I use to monitor the evolution of the market, so I am alerted when new trends or opportunities surface. I also present how to select tools among equivalent alternatives. 
 
 I hope you enjoy the ride!
 
 
-## How to use this book
+== How to use this book
 
 The first three parts of this book are meant to be followed in order like a tutorial. First, we put in place a development environment to support the Agile workflow we propose. Then, in the subsequent parts, we use that environment to build our example application and to improve it as we progress.  You can always skip some content if you are already familiar with it.  The Git repository is designed to provide you with the example app at a working state corresponding to a specific chapter.  So you can pick it up from there and continue with more advanced topics without getting lost.
 If we think a chapter can be skipped by the more advanced readers (without impacting their comprehension of the following chapters), you will see an *optional icon* marking that chapter (see the following [Conventions used in this book](#conventions-used-in-this-book) section).
 
 The book was written with the idea of releasing it to the community in parts as it was written.  That way, I was able to build a *Build-Measure-Learn* loop from the beginning à la *Lean Startup*.^[<http://theleanstartup.com/>]  This book will continue to develop even after it is released, and it will be updated regularly using feedback from readers and by following the new trends the Android ecosystem brings us.  So, as a complement to this book, I strongly encourage you to register---for free---to the following communities to stay informed of new events related to *Agile Android Software Development*:
 
-* Google Group: <https://groups.google.com/forum/?hl=fr#!forum/agile-android-software-development>
-* Google+ community: <https://plus.google.com/u/0/communities/106666596834203709065>
-* Mailing List: <http://eepurl.com/XTV8H>  
+* Google Group: https://groups.google.com/forum/?hl=fr#!forum/agile-android-software-development
+* Google+ community: https://plus.google.com/u/0/communities/106666596834203709065
+* Mailing List: http://eepurl.com/XTV8H
 
-You should also register for a free account on *GitHub* to access the *Agile Android Software Development* repository : <https://github.com/Agile-Android-Software-Development>.  You will be able to get all the examples, scripts, and much more from the Git repository.
+You should also register for a free account on *GitHub* to access the *Agile Android Software Development* repository : https://github.com/Agile-Android-Software-Development.  You will be able to get all the examples, scripts, and much more from the Git repository.
 
 
-## Conventions used in this book
+== Conventions used in this book
 
 The following conventions are used in this book:
 
@@ -106,32 +106,25 @@ Used for source code listings and reference of class, variable, parameter names,
 
 Indicates source code that was modified to illustrate an improvement to a previously presented source code listing.
 
-*Italic*
+_Italic_
 
 Used when referring to URLs, filenames, file extensions, and to put emphasis on technical terms the first time they are cited in a chapter.
 
-![Tip](images/tip.png)\
+TIP: This icon indicates a tip or a suggestion.
 
-This icon indicates a tip or a suggestion.
+WARNING: This icon represents a notice or warning.
 
-![Notice or Warning](images/notice.png)\
 
-This icon represents a notice or warning.
-
-![Optional](images/optional.png)\
-
-This icon illustrates that a section of text can be skipped and is provided only to offer some depth to a topic but is not essential to its understanding. 
-
-## Recommanded references
+== Recommanded references
 
 If you need to deepen your knowledge or dust-off your Android programming skills, I recommend you the following books :
 
-* Phillips, Bill, and Brian Hardy. [_**Android programming : the Big Nerd Ranch guide**_](http://goo.gl/9Svzp7). Atlanta, Ga: Big Nerd Ranch, 2013. Print. ISBN-10: 0321804333.
-* Mednieks, Zigurd R. [_**Programming Android**_](http://goo.gl/vr7Uwx). Farnham: O'Reilly, 2012. Print. ISBN-10: 9781449316648.
-* Clifton, Ian G. [_**Android user interface design : turning ideas and sketches into beautifully designed apps**_](http://goo.gl/0JtRFp). Upper Saddle River, NJ: Addison-Wesley, 2013. Print. ISBN-10: 0321886739.
-* Murphy, Mark L. _**The Busy Coder's Guide to Android Development**_. eBook. Website: [https://wares.commonsware.com](https://wares.commonsware.com/#agiledroid). 
+* Phillips, Bill, and Brian Hardy. http://goo.gl/9Svzp7[_**Android programming : the Big Nerd Ranch guide**_]. Atlanta, Ga: Big Nerd Ranch, 2013. Print. ISBN-10: 0321804333.
+* Mednieks, Zigurd R. http://goo.gl/vr7Uwx[_**Programming Android**_]. Farnham: O'Reilly, 2012. Print. ISBN-10: 9781449316648.
+* Clifton, Ian G. http://goo.gl/0JtRFp[_**Android user interface design : turning ideas and sketches into beautifully designed apps**_]. Upper Saddle River, NJ: Addison-Wesley, 2013. Print. ISBN-10: 0321886739.
+* Murphy, Mark L. _**The Busy Coder's Guide to Android Development**_. eBook. Website: https://wares.commonsware.com/#agiledroid[https://wares.commonsware.com]. 
 
-## About the author
+== About the author
 
 Étienne Savard is a dad, a certified *Professional Scrum Master* (PSM), a pragmatic programmer, and an *Open Source* advocate. He has been a software developer for a long time. It all started on a *TRS-80 Color Computer* (when 64K was a lot of memory and 16 colors were enough). Since then, he has continued to pursue his quest to boldly go where no developer has gone before!
 
