@@ -10,6 +10,7 @@ The book is also available online from the official website at: [https://agiledr
 * Clone the repository
 * Install the latest version of [AsciiDoctor](http://asciidoctor.org/). On Ubuntu :
 		sudo apt-get install asciidoctor
+* You need ruby and bundler installed, see [Ruby Language website](https://www.ruby-lang.org/en/documentation/installation/) for installation instructions.		
 * Get the dependencies needed:
         	bundle install	
 * To generate the Ebook in all formats:
