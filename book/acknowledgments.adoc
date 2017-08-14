@@ -1,12 +1,18 @@
-= Acknowledgements
+:doctype:   book
+:docinfo:
+:toc:
+:toclevels: 2
 
-== Donors
+[acknowledgements]
+== Acknowledgements
+
+=== Donors
 
 You will find below a list of all donors that contributed money to support this free book. Your support to this project means a lot, and best efforts were deployed to meet your expectations while writing this book.
 
 Thank you!
 
-=== Early adopters
+==== Early adopters
 
 Below are the first donors when this book was still in its infancy. Thank you to have believed in this project early on. You drove me forward during this journey.
 
@@ -22,22 +28,19 @@ Below are the first donors when this book was still in its infancy. Thank you to
 * Joe Jimenez
 * Kevin Berglund
 
-=== Kickstarter campaign contributors
+==== Kickstarter campaign contributors
 
 **Coming soon!**
 
-Please, back this project on Kickstarter: https://www.kickstarter.com/projects/agiledroid/agile-android-software-development-book
-
-=== How to be listed here?
+==== How to be listed here?
 
 You can add your name to this list too by http://bit.ly/1tKb4y1[donating].
 
 
-== Cover image and illustrations
+=== Cover image and illustrations
 
 All illustrations of this book, unless specified otherwise, are the original creations of either my daughters, Lea and Marianne, or myself.  
 
 Lea draw the cover image for me on the whiteboard after she saw the Android mascot somewhere in my home office. I colored and edited the original drawing using GIMP.
 
 Thanks Lea & Marianne.
- 

@@ -1,8 +1,14 @@
-= About this release
+:doctype:   book
+:docinfo:
+:toc:
+:toclevels: 2
+
+[about]
+== About this release
 
 New version of this book are released regularly. To keep up with the continuous publication process used by this book, this section provides you with specific information about new content, and the build process itself (version number, date and time of the build, and such).
 
-== Latest changes
+=== Latest changes
 
 - Fixed the build
 
@@ -12,7 +18,7 @@ New version of this book are released regularly. To keep up with the continuous 
 Develop
 - Reorganization of book structure. Pushing back docker use to the advanced topics section.
 
-== Version information
+=== Version information
 
 * Version number: v0.0.4
 * Release date: Wed May 11 00:41:35 2016 -0400

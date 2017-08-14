@@ -4,6 +4,7 @@ Agile Android Software Development
 :docinfo:
 :toc:
 :toclevels: 2
+:pagenums:
 :front-cover-image: image:book/cover.jpg[width=1050,height=1600]
 
 include::book/disclaimer.adoc[]
